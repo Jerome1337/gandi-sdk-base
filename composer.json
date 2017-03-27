@@ -1,0 +1,35 @@
+{
+    "name": "jerome1337/gandi-sdk",
+    "description": "PHP SDK for Gandi API",
+    "type": "library",
+    "keywords": ["Gandi", "API", "Symfony"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérôme Pogeant",
+            "email": "p-jerome@hotmail.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "guzzlehttp/psr7": "^1.0",
+        "lstrojny/fxmlrpc": "^0.14.0",
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message": "^1.5"
+    },
+    "require-dev": {
+        "symfony/dependency-injection": "^2.8 || ^3.0",
+        "symfony/http-kernel": "^2.8 || ^3.0"
+    },
+    "suggest": {
+        "symfony/http-kernel": "For Symfony integration as a bundle",
+        "symfony/dependency-injection": "For Symfony integration as a bundle"
+    },
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": { "Jerome1337\\Gandi\\": "src" }
+    }
+}
