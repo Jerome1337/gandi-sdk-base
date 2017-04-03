@@ -25,13 +25,13 @@ With Symfony:
 
 * Register the bundle
 
-```
+```php
 new Jerome1337\Gandi\Bridge\Symfony\Bundle\Jerome1337GandiBundle()
 ```
 
 * In your `config.yml`
 
-```
+```yaml
 jerome1337_gandi:
     # Change to https://rpc.gandi.net/xmlrpc/ in prod
     server_url: https://rpc.ote.gandi.net/xmlrpc/
@@ -40,4 +40,11 @@ jerome1337_gandi:
 
 ## Usage
 
-Then use it as is
+Use the predefined methods and/or use Gandi methods directly
+
+```php
+$gandi = new Gandi('server_url', 'api_key');
+
+# $gandi->setup()->proxyName->methodName(params);
+$gandi->setup()->domain->info('mydomain.net');
+```
