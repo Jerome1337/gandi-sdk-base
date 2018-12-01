@@ -1,5 +1,7 @@
 # Gandi SDK
 
+This SDK has been moved to https://github.com/nexylan/gandi-sdk
+
 PHP SDK for Gandi API.
 
 [![Latest Stable Version](https://poser.pugx.org/jerome1337/gandi-sdk/v/stable?format=flat-square)](https://packagist.org/packages/jerome1337/gandi-sdk)
